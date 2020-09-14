@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 1.6rem
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-secondary;
+    font-weight: 400;
+}
