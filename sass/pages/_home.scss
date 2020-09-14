@@ -3,3 +3,30 @@
     width: 100%;
     text-align: center;
 }
+
+.about {
+    padding: $padding-large;
+
+    & .wrapper {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 2px;
+            width: 10rem;
+            background-color: $dark-grayish-violet;
+        }
+    }
+
+    & h1 {
+        line-height: 2;
+    }
+}

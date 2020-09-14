@@ -46,7 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 .hero--heading {
   font-size: 5.2rem;
   line-height: 1.2;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 3; }
 
 .hero p {
   line-height: 1.6;
@@ -88,6 +90,18 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         padding: 10rem 0rem; }
 
+.about .grid {
+  margin-top: 5rem;
+  grid-template-columns: 1fr; }
+  .about .grid__item {
+    text-align: center; }
+    .about .grid__item:not(:last-child) {
+      margin-bottom: 5rem; }
+    .about .grid__item svg {
+      margin-bottom: 2.5rem; }
+    .about .grid__item h2 {
+      margin-bottom: 2.5rem; }
+
 .header {
   background-color: #fafafa;
   position: absolute;
@@ -119,3 +133,23 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   width: 100%;
   text-align: center; }
+
+.about {
+  padding: 10rem 0rem; }
+  .about .wrapper {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden; }
+    .about .wrapper::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 2px;
+      width: 10rem;
+      background-color: #837d87; }
+  .about h1 {
+    line-height: 2; }
