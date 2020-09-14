@@ -8,3 +8,9 @@
     align-items: center;
     flex-direction: column;
 }
+
+@mixin center-down {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

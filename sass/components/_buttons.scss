@@ -1,0 +1,14 @@
+.cta {
+    color: $very-light-gray;
+    display: inline-block;
+    border: 2px solid $very-light-gray;
+    padding: 1.6rem 3.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    &:hover {
+        background-color: $very-light-gray;
+        color: $very-dark-violet;
+    }
+}

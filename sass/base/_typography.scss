@@ -23,3 +23,16 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.hero {
+    &--heading {
+        font-size: 5.2rem;
+        line-height: 1.2;
+        margin-bottom: 5rem;
+    }
+
+    & p {
+        line-height: 1.6;
+        margin-bottom: 7.5rem;
+    }
+}

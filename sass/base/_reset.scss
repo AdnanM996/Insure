@@ -10,9 +10,19 @@ body {
     width: 100%;
 }
 
+body {
+    background-color: $very-light-gray;
+}
+
 .wrapper {
     width: 90%;
     max-width: 1350px;
     display: flex;
     margin: 0% auto;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    vertical-align: bottom;
 }
