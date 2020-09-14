@@ -1,0 +1,26 @@
+.header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 5;
+    padding: $padding-small;
+    width: 100%;
+
+    & .wrapper {
+        @include space-center;
+    }
+
+    & .menu {
+        height: 5rem;
+        width: 5rem;
+        border: 2px solid $very-dark-violet;
+        display: flex;
+        @include space-around-down;
+
+        &__line {
+            width: 90%;
+            height: 2px;
+            background-color: $very-dark-violet;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1350px;
+    display: flex;
+    margin: 0% auto;
+}

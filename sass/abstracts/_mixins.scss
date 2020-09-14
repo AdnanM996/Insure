@@ -1,0 +1,10 @@
+@mixin space-center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin space-around-down {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
