@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "DM Serif Display", serif;
   font-weight: 400; }
 
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #837d87;
+  margin-bottom: 3.5rem; }
+
 .logo {
   color: #2b272f;
   display: block;
@@ -65,6 +71,52 @@ h1, h2, h3, h4, h5, h6 {
   .cta:hover {
     background-color: #fafafa;
     color: #2b272f; }
+
+.footer {
+  padding: 10rem 0rem; }
+  .footer .wrapper {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+  .footer--top {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid #837d87;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    .footer--top .logo {
+      position: relative;
+      z-index: 3; }
+    .footer--top ul {
+      margin-top: 2.5rem;
+      list-style: none;
+      display: flex;
+      position: relative;
+      z-index: 3; }
+    .footer--top li:not(:last-child) {
+      margin-right: 2.4rem; }
+  .footer--bottom {
+    padding: 5rem 0rem; }
+    .footer--bottom__item {
+      text-align: center; }
+      .footer--bottom__item:not(:last-child) {
+        margin-bottom: 5rem; }
+      .footer--bottom__item ul {
+        list-style: none; }
+      .footer--bottom__item li:not(:last-child) {
+        margin-bottom: 1.4rem; }
+      .footer--bottom__item a {
+        color: #2b272f;
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none; }
 
 .grid {
   display: grid;
@@ -129,6 +181,9 @@ h1, h2, h3, h4, h5, h6 {
 .nav {
   display: none; }
 
+main {
+  padding-bottom: 10rem; }
+
 .hero {
   height: auto;
   width: 100%;
@@ -153,3 +208,19 @@ h1, h2, h3, h4, h5, h6 {
       background-color: #837d87; }
   .about h1 {
     line-height: 2; }
+
+.how-we-work {
+  background-color: #2d2640;
+  color: #fafafa;
+  padding: 10rem 0rem;
+  width: 90%;
+  margin: 0% auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+  .how-we-work .wrapper {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+  .how-we-work h2 {
+    z-index: 2; }

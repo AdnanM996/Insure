@@ -14,6 +14,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $dark-grayish-violet;
+    margin-bottom: 3.5rem;
+}
+
 .logo {
     color: $very-dark-violet;
     display: block;

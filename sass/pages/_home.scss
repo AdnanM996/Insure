@@ -1,3 +1,7 @@
+main {
+    padding-bottom: 10rem;
+}
+
 .hero {
     height: auto;
     width: 100%;
@@ -28,5 +32,26 @@
 
     & h1 {
         line-height: 2;
+    }
+}
+
+.how-we-work {
+    background-color: $dark-violet;
+    color: $very-light-gray;
+    padding: $padding-large;
+    width: 90%;
+    margin: 0% auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    & .wrapper {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    & h2 {
+        z-index: 2;
     }
 }
