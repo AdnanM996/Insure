@@ -34,6 +34,32 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "DM Serif Display", serif;
   font-weight: 400; }
 
+h1 {
+  font-size: 3.6rem;
+  text-transform: capitalize;
+  line-height: 1.6;
+  margin-bottom: 2.5rem; }
+
+h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  line-height: 1.6; }
+
+h3 {
+  font-size: 2.4rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h5 {
+  font-size: 1.8rem;
+  color: #837d87;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase; }
+
+h6 {
+  font-size: 1.6rem; }
+
 h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -60,35 +86,66 @@ h3 {
   line-height: 1.6;
   margin-bottom: 7.5rem; }
 
+.how-we-work h2 {
+  margin-bottom: 5rem; }
+
+.fa-facebook-square,
+.fa-twitter,
+.fa-pinterest,
+.fa-instagram {
+  color: #837d87;
+  display: block;
+  font-size: 2.4rem;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1); }
+  .fa-facebook-square:active, .fa-facebook-square:hover,
+  .fa-twitter:active,
+  .fa-twitter:hover,
+  .fa-pinterest:active,
+  .fa-pinterest:hover,
+  .fa-instagram:active,
+  .fa-instagram:hover {
+    color: #2b272f; }
+
+.footer--link {
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1); }
+  .footer--link:active, .footer--link:hover {
+    text-decoration: underline; }
+
 .cta {
   color: #fafafa;
   display: inline-block;
   border: 2px solid #fafafa;
+  font-size: 1.6rem;
+  font-weight: 700;
   padding: 1.6rem 3.2rem;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
-  .cta:hover {
+  .cta:hover, .cta:active {
     background-color: #fafafa;
     color: #2b272f; }
 
 .footer {
-  padding: 10rem 0rem; }
+  padding: 10rem 0rem;
+  width: 100%; }
   .footer .wrapper {
     justify-content: space-between;
     align-items: center;
     flex-direction: column; }
   .footer--top {
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 5rem;
     border-bottom: 2px solid #837d87;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column; }
+    width: 100%; }
+    .footer--top .wrapper {
+      width: 100%;
+      height: auto;
+      padding: 6rem 0rem;
+      background-image: url(../../images/bg-pattern-footer-mobile.svg);
+      background-attachment: scroll;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 5rem;
+      overflow: hidden; }
     .footer--top .logo {
       position: relative;
       z-index: 3; }

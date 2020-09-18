@@ -14,6 +14,38 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+h1 {
+    font-size: 3.6rem;
+    text-transform: capitalize;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    line-height: 1.6;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+    color: $dark-grayish-violet;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
 h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -43,5 +75,37 @@ h3 {
     & p {
         line-height: 1.6;
         margin-bottom: 7.5rem;
+    }
+}
+
+.how-we-work {
+    & h2 {
+        margin-bottom: 5rem;
+    }
+}
+
+.fa-facebook-square,
+.fa-twitter,
+.fa-pinterest,
+.fa-instagram {
+    color: $dark-grayish-violet;
+    display: block;
+    font-size: 2.4rem;
+    transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    &:active,
+    &:hover {
+        color: $very-dark-violet;
+    }
+}
+
+.footer {
+    &--link {
+        transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        &:active,
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
