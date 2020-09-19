@@ -57,6 +57,11 @@
         margin-top: 5rem;
         grid-template-columns: 1fr;
 
+        @media only screen and(min-width: $large-device) {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 7.5rem;
+        }
+
         &__item {
             text-align: center;
 

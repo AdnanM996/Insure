@@ -45,13 +45,34 @@ main {
     position: relative;
     overflow: hidden;
 
+    @media only screen and(min-width: $medium-device) {
+        text-align: start;
+
+        &-svg--mobile {
+            display: none;
+        }
+
+        & .cta {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
     & .wrapper {
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+
+        @media only screen and(min-width: $medium-device) {
+            flex-direction: row;
+        }
     }
 
     & h2 {
         z-index: 2;
+
+        @media only screen and(min-width: $medium-device) {
+            font-size: 5.2rem;
+        }
     }
 }

@@ -145,6 +145,9 @@ h3 {
 .footer {
   padding: 10rem 0rem;
   width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .footer svg {
+      display: none; } }
   .footer .wrapper {
     justify-content: space-between;
     align-items: center;
@@ -152,6 +155,9 @@ h3 {
   .footer--top {
     border-bottom: 2px solid #837d87;
     width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .footer--top svg {
+        display: none; } }
     .footer--top .wrapper {
       width: 100%;
       height: auto;
@@ -169,9 +175,6 @@ h3 {
           flex-direction: row;
           padding: 3.5rem 0rem;
           background-image: url(../../images/bg-pattern-footer-desktop.svg); } }
-    .footer--top .logo {
-      position: relative;
-      z-index: 3; }
     .footer--top ul {
       margin-top: 2.5rem;
       list-style: none;
@@ -244,6 +247,10 @@ h3 {
 .about .grid {
   margin-top: 5rem;
   grid-template-columns: 1fr; }
+  @media only screen and (min-width: 996px) {
+    .about .grid {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 7.5rem; } }
   .about .grid__item {
     text-align: center; }
     .about .grid__item:not(:last-child) {
@@ -260,7 +267,8 @@ h3 {
   left: 0%;
   z-index: 55;
   padding: 2.5rem 0rem;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.25); }
   .header .wrapper {
     justify-content: space-between;
     align-items: center; }
@@ -378,9 +386,23 @@ main {
   text-align: center;
   position: relative;
   overflow: hidden; }
+  @media only screen and (min-width: 768px) {
+    .how-we-work {
+      text-align: start; }
+      .how-we-work-svg--mobile {
+        display: none; }
+      .how-we-work .cta {
+        position: relative;
+        z-index: 2; } }
   .how-we-work .wrapper {
     justify-content: space-between;
     align-items: center;
     flex-direction: column; }
+    @media only screen and (min-width: 768px) {
+      .how-we-work .wrapper {
+        flex-direction: row; } }
   .how-we-work h2 {
     z-index: 2; }
+    @media only screen and (min-width: 768px) {
+      .how-we-work h2 {
+        font-size: 5.2rem; } }
