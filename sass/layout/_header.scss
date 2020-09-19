@@ -1,14 +1,19 @@
 .header {
     background-color: $very-light-gray;
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: 0%;
-    z-index: 5;
+    z-index: 55;
     padding: $padding-small;
     width: 100%;
 
     & .wrapper {
         @include space-center;
+
+        @media only screen and(min-width: $medium-device) {
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     & .menu {
@@ -17,6 +22,10 @@
         border: 2px solid $very-dark-violet;
         display: flex;
         @include space-around-down;
+
+        @media only screen and(min-width: $medium-device) {
+            display: none;
+        }
 
         &__line {
             width: 90%;

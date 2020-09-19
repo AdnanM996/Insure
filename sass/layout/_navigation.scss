@@ -1,3 +1,78 @@
 .nav {
     display: none;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    z-index: 5;
+    padding-top: 7.5rem;
+    background-color: $very-dark-violet;
+    //display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    @media only screen and(min-width: $medium-device) {
+        display: flex;
+        position: relative;
+        padding-top: 0rem;
+        margin-top: 0px;
+        background-color: transparent;
+
+        & svg {
+            display: none;
+        }
+    }
+
+    & ul {
+        list-style: none;
+        width: 100%;
+
+        @media only screen and(min-width: $medium-device) {
+            width: auto;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    & li {
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+
+            @media only screen and(min-width: $medium-device) {
+                margin-bottom: 0rem;
+                margin-right: 2.5rem;
+            }
+        }
+    }
+
+    & a {
+        color: $very-light-gray;
+        display: block;
+        font-size: 3.2rem;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        @media only screen and(min-width: $medium-device) {
+            color: $dark-grayish-violet;
+            font-size: 1.6rem;
+        }
+
+        &:active,
+        &:hover {
+            color: $dark-grayish-violet;
+
+            @media only screen and(min-width: $medium-device) {
+                color: $very-dark-violet;
+            }
+        }
+    }
+
+    @media only screen and(min-width: $large-device) {
+        display: flex;
+    }
 }

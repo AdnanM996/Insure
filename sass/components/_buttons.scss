@@ -14,4 +14,28 @@
         background-color: $very-light-gray;
         color: $very-dark-violet;
     }
+
+    &-second {
+        border: 2px solid $very-light-gray;
+        padding: 1.6rem 3.2rem;
+        margin: 5rem auto 0rem auto;
+        width: 90%;
+        transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        @media only screen and(min-width: $medium-device) {
+            width: auto;
+            margin: 0rem;
+            border: 2px solid $very-dark-violet;
+        }
+
+        &:active,
+        &:hover {
+            background-color: $very-light-gray;
+
+            @media only screen and(min-width: $medium-device) {
+                background-color: $very-dark-violet;
+                color: $very-light-gray !important;
+            }
+        }
+    }
 }

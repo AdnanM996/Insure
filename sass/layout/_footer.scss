@@ -22,7 +22,14 @@
             background-repeat: no-repeat;
             background-size: cover;
             margin-bottom: 5rem;
-            overflow: hidden;
+
+            @media only screen and(min-width: $medium-device) {
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                padding: 3.5rem 0rem;
+                background-image: url(../../images/bg-pattern-footer-desktop.svg);
+            }
         }
 
         & .logo {
@@ -47,6 +54,13 @@
 
     &--bottom {
         padding: 5rem 0rem;
+        width: 100%;
+
+        @media only screen and(min-width: $medium-device) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
 
         &__item {
             &:not(:last-child) {
