@@ -26,3 +26,17 @@ img {
     width: 100%;
     vertical-align: bottom;
 }
+
+.mobile-svg {
+    @media only screen and(min-width: $medium-device){
+        display: none;
+    }
+}
+
+.desktop-svg {
+    display: none;
+
+    @media only screen and(min-width: $large-device) {
+        display: block;
+    }
+}

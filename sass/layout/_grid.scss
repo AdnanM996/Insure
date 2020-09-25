@@ -65,6 +65,11 @@
         &__item {
             text-align: center;
 
+            @media only screen and(min-width: $large-device) {
+                text-align: start;
+            }
+
+
             &:not(:last-child) {
                 margin-bottom: 5rem;
             }
