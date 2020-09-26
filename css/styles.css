@@ -295,10 +295,12 @@ h3 {
   margin-top: 8.3rem;
   background-color: #2b272f;
   justify-content: center;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transform: translateX(100%); }
+  transition: all .5s ease-in;
+  transform: translateX(100%);
+  visibility: hidden; }
   .nav--open {
-    transform: translateX(0%); }
+    transform: translateX(0%);
+    visibility: visible; }
   @media only screen and (min-width: 768px) {
     .nav {
       display: flex;
@@ -306,7 +308,8 @@ h3 {
       padding-top: 0rem;
       margin-top: 0px;
       background-color: transparent;
-      transform: translateX(0%); }
+      transform: translateX(0%);
+      visibility: visible; }
       .nav svg {
         display: none; } }
   .nav ul {
@@ -378,8 +381,9 @@ main {
         .hero__img picture {
           position: absolute;
           top: 10rem;
-          height: 100%;
+          height: auto;
           width: 100%;
+          object-fit: cover;
           box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35); } }
   .hero__text {
     padding: 7.5rem 0rem;
@@ -400,6 +404,17 @@ main {
       margin: 0 auto;
       text-align: center; }
       @media only screen and (min-width: 996px) {
+        .hero__text__inner h1 {
+          position: relative; }
+          .hero__text__inner h1::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: 0%;
+            height: 3px;
+            width: 15%;
+            background-color: #fafafa; } }
+      @media only screen and (min-width: 996px) {
         .hero__text__inner {
           width: 100%;
           text-align: start; } }
@@ -408,17 +423,18 @@ main {
   padding: 10rem 0rem; }
   .about h1 {
     position: relative; }
-    .about h1::before {
-      content: '';
-      position: absolute;
-      top: -10%;
-      left: 0%;
-      height: 2px;
-      width: 35%;
-      background-color: #2b272f; }
+    @media only screen and (min-width: 996px) {
+      .about h1::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: 0%;
+        height: 2px;
+        width: 35%;
+        background-color: #2b272f; } }
   @media only screen and (min-width: 996px) {
     .about {
-      margin-top: 20rem; } }
+      padding: 17.5rem 0rem 10rem 0rem; } }
   .about .wrapper {
     justify-content: space-between;
     align-items: center;

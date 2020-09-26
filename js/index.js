@@ -46,7 +46,7 @@ window.addEventListener('load', ()=> {
     }, 0.20)
 
     let scene2 = new ScrollMagic.Scene({
-        triggerElement: '.about-trigger',
+        triggerElement: '#heroParagraph',
         triggerHook: 0
     })
 

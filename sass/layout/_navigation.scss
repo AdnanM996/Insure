@@ -9,11 +9,13 @@
     margin-top: 8.3rem;
     background-color: $very-dark-violet;
     justify-content: center;
-    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .5s ease-in;
     transform: translateX(100%);
+    visibility: hidden;
 
     &--open {
         transform: translateX(0%);
+        visibility: visible;
     }
 
     @media only screen and(min-width: $medium-device) {
@@ -23,6 +25,7 @@
         margin-top: 0px;
         background-color: transparent;
         transform: translateX(0%);
+        visibility: visible;
 
         & svg {
             display: none;

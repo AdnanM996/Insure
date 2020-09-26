@@ -38,8 +38,9 @@ main {
             & picture {
                 position: absolute;
                 top: 10rem;
-                height: 100%;
+                height: auto;
                 width: 100%;
+                object-fit: cover;
                 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
             }
         }
@@ -65,7 +66,25 @@ main {
             width: 90%;
             margin: 0 auto;
             text-align: center;
+            
 
+            & h1 {
+                @media only screen and(min-width: $large-device) {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: -10%;
+                        left: 0%;
+                        height: 3px;
+                        width: 15%;
+                        background-color: $very-light-gray;
+                    }
+            }
+
+            
+    }
             @media only screen and(min-width: $large-device) {
                 width: 100%;
                 text-align: start;
@@ -80,20 +99,25 @@ main {
     & h1 {
         position: relative;
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: -10%;
-            left: 0%;
-            height: 2px;
-            width: 35%;
-            background-color: $very-dark-violet;
+        @media only screen and(min-width: $large-device) {
+            &::before {
+                content: '';
+                position: absolute;
+                top: -10%;
+                left: 0%;
+                height: 2px;
+                width: 35%;
+                background-color: $very-dark-violet;
+    
+            }
         }
     }
 
     @media only screen and(min-width: $large-device){
-        margin-top: 20rem;
+        padding: 17.5rem 0rem 10rem 0rem;
     }
+
+    
 
     & .wrapper {
         justify-content: space-between;
