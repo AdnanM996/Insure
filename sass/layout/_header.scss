@@ -18,20 +18,8 @@
     }
 
     & .menu {
-        height: 5rem;
-        width: 5rem;
-        border: 2px solid $very-dark-violet;
-        display: flex;
-        @include space-around-down;
-
         @media only screen and(min-width: $medium-device) {
             display: none;
-        }
-
-        &__line {
-            width: 90%;
-            height: 2px;
-            background-color: $very-dark-violet;
         }
     }
 }
